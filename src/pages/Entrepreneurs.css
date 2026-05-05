@@ -1,0 +1,27 @@
+.entrepreneurs-page .card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.entrepreneurs-page .card ul li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #555;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.entrepreneurs-page .card ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #1a5490;
+  font-weight: bold;
+}
+
+.entrepreneurs-page .card ul li:last-child {
+  border-bottom: none;
+}
+
+

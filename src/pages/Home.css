@@ -1,0 +1,159 @@
+.hero {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a5490 0%, #2d7bc4 100%);
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.quick-services {
+  background: #f8f9fa;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #1a5490;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.about-preview {
+  background: white;
+}
+
+.about-preview-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-preview-text h2 {
+  color: #1a5490;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.about-preview-text p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.about-preview-image img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.news-preview {
+  background: #f8f9fa;
+}
+
+.news-image {
+  margin: -20px -20px 20px -20px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.news-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 0;
+}
+
+.news-date {
+  color: #999;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news-content h3 {
+  color: #1a5490;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.news-content p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .about-preview-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-preview-text h2 {
+    font-size: 2rem;
+  }
+}
+
+

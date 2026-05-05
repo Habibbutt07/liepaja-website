@@ -1,0 +1,119 @@
+.store-search-bar {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.store-search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.store-search-input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 24px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.store-search-input:focus {
+  border-color: #1a5490;
+}
+
+.store-search-button {
+  position: absolute;
+  right: 5px;
+  background: #1a5490;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.store-search-button:hover {
+  background: #144175;
+}
+
+.store-search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 2px solid #1a5490;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 100;
+  margin-top: 2px;
+}
+
+.store-search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.store-search-result-item:last-child {
+  border-bottom: none;
+}
+
+.store-search-result-item:hover {
+  background-color: #f5f5f5;
+}
+
+.store-search-result-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.store-search-result-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.store-search-result-info strong {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.store-search-result-info span {
+  color: #1a5490;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.store-search-result-more {
+  padding: 12px 15px;
+  text-align: center;
+  color: #1a5490;
+  font-weight: 500;
+  cursor: pointer;
+  border-top: 1px solid #f0f0f0;
+  background: #f8f9fa;
+}
+
+.store-search-result-more:hover {
+  background: #e9ecef;
+}
+

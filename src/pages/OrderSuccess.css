@@ -1,0 +1,168 @@
+.order-success-page {
+  background: #f8f9fa;
+}
+
+.success-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.success-icon {
+  color: #28a745;
+  margin-bottom: 30px;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-content h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.order-number {
+  font-size: 1.2rem;
+  color: #1a5490;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.order-message {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.order-details {
+  text-align: left;
+  margin: 40px 0;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.order-details h3 {
+  color: #1a5490;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.order-items-list {
+  margin-bottom: 20px;
+}
+
+.order-item-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.order-item-summary:last-child {
+  border-bottom: none;
+}
+
+.order-item-summary img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.order-item-details h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.order-item-details p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.order-item-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a5490;
+}
+
+.order-total-summary {
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.total-row strong {
+  color: #1a5490;
+  font-size: 1.8rem;
+}
+
+.success-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-primary {
+  background: #1a5490;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #144175;
+}
+
+.order-loading {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+@media (max-width: 768px) {
+  .success-content {
+    padding: 30px 20px;
+  }
+
+  .success-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .order-item-summary {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .success-actions {
+    flex-direction: column;
+  }
+}
+
